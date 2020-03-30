@@ -1,0 +1,236 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.sec-0 .container-fluid {
+  padding: 0;
+  height: 100vh;
+}
+
+.sec-0 .container-fluid .banner {
+  background: url("images/main1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100%;
+  clear: both;
+  opacity: 0.9;
+  position: relative;
+}
+
+.sec-0 .container-fluid .banner .intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  padding: 20px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.7);
+}
+.sec-0 .container-fluid .banner .intro h1 {
+  font-size: 4vh;
+}
+
+.typewriter {
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid black;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
+.mainwrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.jumbotron {
+  overflow: auto;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.jumbotron .display-2 {
+  font-size: 12vh;
+}
+
+.jumbotron .content {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 70%;
+  font-size: 3vh;
+}
+
+.banner_2 {
+  background: url("images/main2.jpg");
+  width: 100%;
+  height: 50vh;
+  background-position: center;
+  background-position: fixed;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  opacity: 0.8;
+}
+
+.banner_2 .bantitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f4f4f4;
+  width: 350px;
+  text-align: center;
+  padding: 10px;
+  opacity: 0.7;
+}
+.sec-2 .container-fluid {
+  display: flex;
+  flex-direction: row;
+}
+
+#first {
+  border-right: 2px solid darkslategray;
+}
+
+#second {
+  border-left: 2px solid darkslategray;
+}
+
+.jumbotron {
+  overflow: auto;
+}
+.container {
+  overflow: auto;
+}
+.sec-2 .container-fluid {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+.sec-2 .container-fluid .col-6 {
+  display: flex;
+  flex-direction: column;
+}
+.sec-2 .container-fluid .col-6 .cardcontainer {
+  width: 100%;
+  /* position: relative; */
+  /* display: flex; */
+  margin: auto;
+}
+
+.sec-2 .container-fluid .col-6 .cardcontainer .card {
+  width: 70%;
+  border-radius: 0;
+  margin: 0.75em 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* position: absolute; */
+}
+
+.sec-2 .container-fluid .col-6 .cardcontainer .card.left {
+  float: right;
+  /* margin-right: 20px; */
+  transform: translate(7%, 0) rotate(-20deg);
+
+  z-index: 2;
+}
+
+.sec-2 .container-fluid .col-6 .cardcontainer .card.right {
+  float: left;
+  /* margin-left: 20px; */
+  transform: translate(-7%, 0) rotate(20deg);
+  z-index: 2;
+}
+/* ################## Part -3 ############################### */
+.sec-3 {
+  /* position: relative; */
+  clear: both;
+}
+
+.sec-3 #dabba {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.form-container {
+  width: 50%;
+  padding: 20px;
+}
+
+.form-container input {
+  border-radius: 0;
+  font-family: "Lato";
+}
+
+.sec-3 .sidebox {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 20px;
+}
+
+.sec-3 .sidebox div {
+  margin: auto;
+  margin-top: 0;
+  text-align: center;
+  background: #d3f6db;
+  opacity: 1;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.sec-3 .sidebox div h2 {
+  font-size: 1em;
+  font-family: "Lato";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.sec-3 .sidebox div img {
+  height: auto;
+  width: 25%;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 680px) {
+  .sec-2 .container {
+    width: 100% !important;
+    margin: 0;
+    max-width: unset;
+  }
+
+  .sec-3 .jumbotron {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #dabba {
+    flex-direction: column !important;
+  }
+
+  #dabba .form-container {
+    width: 100%;
+  }
+  #dabba .sidebox {
+    width: 100%;
+  }
+}
